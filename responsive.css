@@ -77,7 +77,7 @@
   	nav a {
 	  	text-align: left;
 	  	width: 100%;
-	  	text-indent: 25px;
+	  	text-indent: 0px;
 	  	color: #333333;
   	}
   	nav a#pull {

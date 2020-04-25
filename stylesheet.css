@@ -86,19 +86,59 @@
   .fa {
     margin-right: 5px;
   }
-  
-  header {
+
+  /* header */
+  nav {
     height: 65px;
     width: 100%;
-    background-color: rgba(34, 49, 52, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 11pt;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: bold;
+    position: fixed;
+    top: 1;
+    z-index: 10;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 500px;
+    height: 40px;
+    float: right;
+  }
+  nav li {
+    display: inline;
+    float: left;
+  }
+  nav a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.5s;
+  }
+  nav a:hover, nav a:active {
+    background-color: black;
+    color: white;
+  }
+  nav a#pull {
+    display: none;
+  }
+
+  .logo {
+    width: 124px;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+
+  /*header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
     position :fixed;
     top: 0;
     z-index: 10;
-  }
-  
-  .logo {
-    width: 124px;
-    margin-top: 20px;
   }
   
   .header-left {
@@ -113,7 +153,8 @@
   .header-right a {
     line-height: 65px;
     padding: 0 25px;
-    color: white;
+    color: black;
+    font-weight: bold;
     display: block;
     float: left;
     transition: all 0.5s;
@@ -121,7 +162,7 @@
   
   .header-right a:hover {
     background-color: rgba(255, 255, 255, 0.3);
-  }
+  }*/
   
   .lesson-wrapper {
     padding-bottom: 80px;
@@ -202,11 +243,10 @@
     padding-bottom: 20px;
   }
   
-  /* Ketik code Anda dibawah */
-  .menu-icon {
-    color: white;
+  /*.menu-icon {
+    color: black;
     float: right;
     font-size: 25px;
     padding: 21px 0;
     display: none;
-  }
+  }*/

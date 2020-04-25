@@ -1,123 +1,71 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>Progate</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	  <script>
-		  $(function() {
-			  var pull 		= $('#pull'); // Variabel tombol navigasi (akan muncul hanya pada perangkat mobile)
-				    menu 		= $('nav ul'); // Variabel menu
+<html lang="en">
 
-			  $(pull).on('click', function(e) {
-          e.preventDefault();
-          menu.slideToggle();
-        });
-        
-        $(window).resize(function(){
-        		var w = $(window).width();
-        		if(w > 600 && menu.is(':hidden')) {
-        			menu.removeAttr('style');
-        		}
-    		});
-		  });
-	  </script>
-  </head>
-  <body>
-    <nav class="clearfix">
-      <img class="logo" src="logo.png">
-      <a href="#" id="pull">Menu</a>
-      <ul class="clearfix">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelompok D-18</title>
+  <link rel="stylesheet" href="stylesheets.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#"><img src="./assets/logo-2.png"></a>
+      </div>
+      <ul class="navigation">
         <li><a href="#">Beranda</a></li>
-        <li><a href="#profile">Tim Kami</a></li>
-        <li><a href="http://digitalent.kominfo.go.id/" target="_blank">Digital Talent</a></li>
+        <li><a href="#team">Team Kami</a></li>
+        <li><a href="https://digitalent.kominfo.go.id/">Digital Talent</a></li>
       </ul>
-    </nav>
-    <!--<header>
-      <div class="container" id="top">
-        <div class="header-left">
-          <a href='/DTS/'><img class="logo" src="logo.png"></a>
-          <h2 id="top"></h2>
+    </div>
+  </header>
+  <div class="content">
+    <div class="container">
+      <h1>selamat datang</h1>
+      <h1 class="letter">di kelompok D-18</h1>
+      <p>Penasaran kita siapa aja? yuk kenali kita lebih dekat</p>
+      <a href="#team" class="btn">Cari Tahu <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+  <div class="content-team" id="team">
+    <div class="container">
+      <h1>team kami</h1>
+      <div class="card-wrapper">
+        <div class="card">
+          <div class="avatar">
+            <img src="./assets/avatar.png" class="rounded">
+          </div>
+          <p class="name">Nama</p>
+          <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”</p>
         </div>
-        <span class="fa fa-bars menu-icon"></span>
-        <div class="header-right">
-          <a href="#profile">Beranda</a>
-          <a href="#profile">Tim Project</a>
-          <a href="#profile">Digital Talent</a>
+        <div class="card">
+          <div class="avatar">
+            <img src="./assets/avatar.png" class="rounded">
+          </div>
+          <p class="name">Nama</p>
+          <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”</p>
         </div>
-      </div>
-    </header>-->
-     <div class="top-wrapper">
-      <div class="container">
-        <h1>BELAJAR CODING.</h1>
-        <h1>BELAJAR MENJADI LEBIH KREATIF.</h1>
-        <p>Progate adalah platform online untuk belajar coding.</p>
-        <p>Kami menawarkan lingkungan pemograman yang lengkap untuk mempermudah Anda memulai.</p>
-        <div class="btn-wrapper">
-          <a href="#" class="btn signup">Daftar dengan Email</a>
-          <p>atau</p>
-          <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Daftar dengan Facebook</a>
-          <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Daftar dengan Twitter</a>
+        <div class="card">
+          <div class="avatar">
+            <img src="./assets/avatar.png" class="rounded">
+          </div>
+          <p class="name">Nama</p>
+          <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”</p>
+        </div>
+        <div class="card">
+          <div class="avatar">
+            <img src="./assets/avatar.png" class="rounded">
+          </div>
+          <p class="name">Nama</p>
+          <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”</p>
         </div>
       </div>
     </div>
-    <div class="lesson-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2 id="profile">Team Kami</h2>
-        </div>
-        <div class="lessons">
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/html.png">
-               <p>HTML & CSS</p>
-            </div>
-             <p class="text-contents">Bahasa yang digunakan untuk membuat dan mendesain tampilan situs web Anda. </p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-              <p>jQuery</p>
-            </div>
-            <p class="text-contents">Library JavaScript yang cepat, kaya akan fitur, dan mudah digunakan yang menangani animasi dan permintaan Ajax.</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/ruby.png">
-              <p>Ruby</p>
-            </div>
-            <p class="text-contents">Bahasa dinamis, serba guna yang sederhana dan produktif. Ruby sering digunakan untuk membuat aplikasi web yang responsive.</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/php.png">
-              <p>PHP</p>
-            </div>
-            <p class="text-contents">Bahasa skrip open source yang dapat disematkan ke dalam HTML, dan cocok untuk pengembangan web.</p>
-          </div>
-          <div class="clear"></div>
-        </div>
-      </div>
-    </div>
-    <div class="message-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2 id="">Apakah anda siap untuk menjadi programer yang handal?</h2>
-          <h3>Ayo belajar coding, ayo belajar menjadi lebih kreatif!</h3>
-        </div>
-        <a href="#top"><span class="btn message">Kembali Ke Atas</span></a>
-      </div>
-    </div>
-    <footer>
-      <div class="container">
-        <!--<img src="https://prog-8.com/images/html/advanced/footer_logo.png">-->
-        <p>Learn to code, learn to be creative.</p>
-      </div>
-    </footer>
-  </body>
+  </div>
+</body>
+
 </html>

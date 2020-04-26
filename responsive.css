@@ -29,7 +29,7 @@
     width: 100%;
     float: none;
     display: block;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0);
   }
   nav li a {
     border-bottom: 1px solid #f0f0f0;
@@ -50,13 +50,20 @@
   }
   nav a#pull:after {
     content:"";
-    background: url('nav-icon.png') no-repeat;
+    /*background: url('nav-icon.png') no-repeat;*/
     width: 30px;
     height: 30px;
     display: inline-block;
     position: absolute;
     right: 15px;
     top: 20px;
+  }
+
+  .menu-icon {
+    color: black;
+    float: right;
+    font-size: 30px;
+    padding: 23px 0;
   }
 
     /*footer {

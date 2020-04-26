@@ -14,46 +14,8 @@
   }
   
   /* Untuk Smartphone */
-  @media screen and (max-width: 600px) {
-    footer {
-      text-align: center;
-    }
-    
-    .lesson {
-      width: 100%;
-    }
-    
-    .btn {
-      width: 100%;
-    }
-    
-    .facebook {
-      margin-bottom: 10px;
-    }
-    
-    .top-wrapper {
-      text-align: left;
-    }
-    
-    /*.header-right{
-      display: none;
-    }
-
-    .menu-icon{
-      display: block;
-    }*/
-    
-    .top-wrapper h1 {
-      font-size: 24px;
-      line-height: 36px;
-    }
-    
-    .top-wrapper p {
-      font-size: 14px;
-      line-height: 20px;
-    }
-
-    nav {
+  @media screen and (max-width: 670px) {
+  nav {
     height: auto;
     border-bottom: 0;
     background: #3498db;
@@ -96,4 +58,42 @@
     right: 15px;
     top: 20px;
   }
+
+    /*footer {
+      text-align: center;
+    }
+    
+    .lesson {
+      width: 100%;
+    }
+    
+    .btn {
+      width: 100%;
+    }
+    
+    .facebook {
+      margin-bottom: 10px;
+    }
+    
+    .top-wrapper {
+      text-align: left;
+    }
+    
+    .header-right{
+      display: none;
+    }
+
+    .menu-icon{
+      display: block;
+    }
+    
+    .top-wrapper h1 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    
+    .top-wrapper p {
+      font-size: 14px;
+      line-height: 20px;
+    }*/
   }
